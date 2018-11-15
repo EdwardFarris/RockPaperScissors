@@ -1,0 +1,70 @@
+body {
+    background-image: url("RPSbackground.jpeg");
+}
+
+#directions-text {
+    color: rgb(5, 115, 167);
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+    padding-top: 20px;
+}
+
+#userchoice-text {
+    color: black;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    font-weight: bold;
+}
+
+#computerchoice-text {
+    color: black;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    font-weight: bold;
+}
+
+#wins-text {
+    color:black;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    font-weight: bold;
+}
+
+#losses-text {
+    color: black;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    font-weight: bold;
+}
+
+#ties-text {
+    color: black;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    font-weight: bold;
+}
+
+.container {
+    background-color: lightgray;
+    width: 50%;
+    height: 455px;
+    opacity: .7;
+    position: relative;
+    top: 70px;
+    left: 270px;
+    border: 4px solid slategray
+    
+    
+}

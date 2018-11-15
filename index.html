@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Frijole|Luckiest+Guy|Special+Elite" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+          <p id="directions-text"><strong>Lets Play Rock, Paper, Scissors! Press "r", "p", or "s" to start!</p></strong>
+          <p id="userchoice-text"></p>
+          <p id="computerchoice-text"></p>
+          <p id="wins-text"></p>
+          <audio id="winSound" src="winSound.wav"></audio>
+          <p id="losses-text"></p>
+          <audio id="loseSound" src="loseSound.wav"></audio>
+          <p id="ties-text"></p>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+    
+    var computerChoices = ["r", "p", "s"];
+    var wins = 0;
+    var losses = 0;
+    var ties = 0;
+    var directionsText = document.getElementById("directions-text");
+    var userChoiceText = document.getElementById("userchoice-text");
+    var computerChoiceText = document.getElementById("computerchoice-text");
+    var winsText = document.getElementById("wins-text");
+    var lossesText = document.getElementById("losses-text");
+    var tiesText = document.getElementById("ties-text");
+
+    document.onkeyup = function(event) {
+      var userGuess = event.key;
+      var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+      
+      if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) { 
+        if ((userGuess === "r" && computerGuess === "s") || 
+            (userGuess === "s" && computerGuess === "p") ||
+            (userGuess === "p" && computerGuess === "r")) {
+              wins++;
+              document.getElementById("winSound").play();
+            } else if (userGuess === computerGuess) {
+              ties++;
+            } else {
+              losses++;
+              document.getElementById("loseSound").play();
+            }
+
+            userChoiceText.textContent = "You chose: " + userGuess + " !";
+            computerChoiceText.textContent = "The computer chose: " + computerGuess + " !";
+            winsText.textContent = "You've won: " + wins + " times!";
+            lossesText.textContent = "You've lost: " + losses + " times!";
+            tiesText.textContent = "You've tied: " + ties + " games!";
+            }
+      };
+    
+  </script>
+
+</body>
+
+</html>
