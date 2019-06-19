@@ -1,70 +1,87 @@
+html, body {
+    min-height: 100%;
+}
+
+
 body {
     background-image: url("RPSbackground.jpeg");
+    height: auto; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: rgb(38, 37, 37);
+    font-size: 65px;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: -4px 3px rgb(220, 18, 106);
+    margin-top: 15px;
 }
 
 #directions-text {
-    color: rgb(5, 115, 167);
-    font-size: 32px;
+    color: rgb(38, 37, 37);
+    font-size: 42px;
     text-align: center;
     font-weight: bold;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Special Elite', cursive;
     padding-top: 20px;
+    text-shadow: -3px 2px rgb(2, 124, 181);
 }
 
 #userchoice-text {
-    color: black;
-    font-size: 28px;
+    color: rgb(38, 37, 37);
+    font-size: 35px;
     text-align: center;
     font-weight: bold;
     font-family: 'Special Elite', cursive;
-    font-weight: bold;
+    text-shadow: -3px 2px rgb(2, 124, 181);
 }
 
 #computerchoice-text {
-    color: black;
-    font-size: 28px;
+    color: rgb(38, 37, 37);
+    font-size: 35px;
     text-align: center;
     font-weight: bold;
     font-family: 'Special Elite', cursive;
-    font-weight: bold;
+    text-shadow: -3px 2px rgb(2, 124, 181);
 }
 
 #wins-text {
-    color:black;
-    font-size: 28px;
+    color: rgb(38, 37, 37);
+    font-size: 35px;
     text-align: center;
     font-weight: bold;
     font-family: 'Special Elite', cursive;
-    font-weight: bold;
+    text-shadow: -3px 2px rgb(2, 124, 181);
 }
 
 #losses-text {
-    color: black;
-    font-size: 28px;
+    color: rgb(38, 37, 37);
+    font-size: 35px;
     text-align: center;
     font-weight: bold;
     font-family: 'Special Elite', cursive;
-    font-weight: bold;
+    text-shadow: -3px 2px rgb(2, 124, 181);
 }
 
 #ties-text {
-    color: black;
-    font-size: 28px;
+    color: rgb(38, 37, 37);
+    font-size: 35px;
     text-align: center;
     font-weight: bold;
     font-family: 'Special Elite', cursive;
-    font-weight: bold;
+    text-shadow: -3px 2px rgb(2, 124, 181);
 }
 
 .container {
-    background-color: lightgray;
-    width: 50%;
-    height: 455px;
-    opacity: .7;
+    background-color: rgba(249, 247, 247, 0.5);
+    width: 66%;
+    height: 570px;
     position: relative;
-    top: 70px;
-    left: 270px;
-    border: 4px solid slategray
-    
-    
+    top: 170px;
+    left: 40px;
+    border: 4px solid slategray;
+    text-align: center;
 }
